@@ -1,0 +1,27 @@
+When a function calls itself but
+UNTIL A SPECIFIED CONDITION IS MET
+
+the condition which is used to stop the recursion calls
+is known as Base Condition
+
+
+int count
+main() {
+    recursionFunction()
+}
+
+void recursionFunction() {
+    if(count == 3) {
+        return; // This is Base Condition
+    }
+    print(count);
+    count++;
+    recursionFunction()
+}
+
+we always need an exit condition when using recursion
+or else it'd be stuck in an Infinite Recursion until
+the Stack memoery overflows
+
+Recursion Tree is the graphical representation of recursion calls
+
