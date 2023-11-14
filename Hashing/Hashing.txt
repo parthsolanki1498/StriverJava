@@ -1,0 +1,39 @@
+Hashing in general is prestoring and fetching
+
+Hashing creates a hash array or frequency array for the existing array
+which basically contains the number of times an element appears in an array
+we can then directly go to hash[desired_number] = ? and get the count of apperance.
+
+In Map, storing and fetching both has time complexity of O(logN) - best, worst, average
+
+
+Hashing works upto 10^7 but considering we have more values, we cannot create
+array of n in that case for that there are some alternatives we can switch to
+
+1. Division Method
+Division method is about moudling each of the array element with 10 and then
+storing the count of the result we get
+
+Example - [2,5,16,28,139,38,48,28,18] --> array[i] % 10
+
+0 - 0
+1 - 0
+2 - 2
+3 - 0
+4 - 0
+5 - 5
+6 - 16
+7 - 0
+8 -> 18 -> 28 -> 28 -> 38 -> 48
+9
+
+by this when we want to look for array[i], we modulo it look for the elements
+apperance in a shorter linked list we already have established using Division Hashing
+
+Linear chaning is required to store the elements ending with same modulo
+
+Coliision is when all the elements ended up in on the same chain
+making best time complextiy of using Hash for stroing and fetching a O(1) and worst being O(N)
+
+Ordered map can have any data structure and can even use pair as key like <int,int>
+for Unordered map only single limited data structue is available like int, char, double and so on
