@@ -1,0 +1,36 @@
+Inseration Sort takes an element and places it in its correct position
+
+First iteration it checks if array is sorted for array of size 1, it always will be
+Second interation it checks if two arrays are sorted
+Third iteration it checks if first three are sorted and so on..
+
+Array - [14, 9, 15, 12, 6, 8, 13]
+
+Step 1 : 14 is sorted for size 1 Array so no changes
+
+Step 2 : [14,9] is not sorted so it changes to [9, 14, 15...]
+
+Step 3 : [9, 14, 15] is sroted so no changes occurs
+
+Step 4 : [9, 14, 15, 12...] is not sorted so it changes to [9, 12, 14, 15...]
+basically right shifts by one till the unsorted element is in correct position
+
+Step 5 : [9, 12, 14, 15, 6..] is not sorted it makes the necessary changes
+[6, 9, 12, 14, 15...]
+
+Step 6 : [9, 12, 14, 15, 6, 8] is not sorted it makes the necessary changes
+[6, 8, 9, 12, 14, 15...]
+
+Step 7 : [6, 8, 9, 12, 14, 15, 13] is not sorted it makes the necessary changes
+[6, 8, 9, 12, 13, 14, 15]
+
+OBSERVATION:
+Loop runs from 0 t0 n-1 
+Logic runs while (j > 0 && a[j-1] > a[j]) and within it we swap
+
+for(int i = 0; i < n - 1; i++) {
+    int j = i;
+    while(j > 0 && a[j-1] > a[j]) {
+        swap(a[j-1], a[j]);
+    }
+}

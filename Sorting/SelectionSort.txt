@@ -1,0 +1,45 @@
+As the name suggests, Selection sort is about Selection itself. Now what do we select?
+We select MINIMUMS and SWAP them
+
+Given Array - [13, 46, 24, 52, 20, 9]
+
+Step 1 - Replace the minium of the array with first index
+[13, 46, 24, 52, 20, 9] -> [9, 46, 24, 52, 20, 13]
+
+Step 2 - Considering the first index is now minium, we start from second index and
+repeat this process
+[9, 46, 24, 52, 20, 13] -> [9, 13, 24, 52, 20, 46]
+
+Step 3 - Repeat Step 2 till we have entire sorted array
+[9, 13, 24, 52, 20, 46] -> [9, 13, 20, 52, 24, 46]
+
+Step 4 - Yet another interation
+[9, 13, 20, 52, 24, 46] -> [9, 13, 20, 24, 52, 46]
+
+Step 5 - Last interation
+[9, 13, 20, 24, 52, 46] -> [9, 13, 20, 24, 46, 52]
+
+We have the entire sorted array using Selection Sort
+
+OBSERVATION:
+Swap at index 0 and minium index [0 - n - 1]
+Swap at index 1 and minium index [1 - n - 1]
+Swap at index 2 and minium index [2 - n - 1]
+...
+...
+...
+Swap at index n - 2 and minium index [(n - 2) - n - 1]
+
+which gives us the following
+PSEDUO CODE:
+
+for(i = 0; i < n - 2; i++) {
+    min = i
+    for(j = i; j < n - 1; j++) {
+        if(array[j] < array[min]) {
+            min = j
+        }
+    }
+    swap(array[min], array[i])
+}
+

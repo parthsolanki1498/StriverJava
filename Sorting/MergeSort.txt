@@ -1,0 +1,16 @@
+Merge Sort is better than the Bubble, Insertion and Selection in Sorting Algorithm
+
+Merge Sort is all about Divine and Merge the Array
+
+Array = [3, 1, 2, 4, 1, 5, 2, 6, 4]   N = 9
+
+Now considering, we have odd N, we can hypothetically divide the array in 4/5 or 5/4
+
+Giving us [3, 1, 2, 4, 1] and [5, 2, 6, 4]
+
+Now since for the first divide, we did 5/4 - we stick to dividing with bigger n on
+left side and smaller on right side in order to write a recursive code
+
+Giving us [3, 1, 2] and [4,1] and further [3, 1] andd [2] and [3] [1]
+
+like this we go to the deepest single or two array and merge them and go upwards

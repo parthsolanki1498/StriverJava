@@ -1,0 +1,44 @@
+Buuble Sort consists of the similar logic as Selection Sort but just tiny bit opposite
+like we used to take minimum at first in Selection Sort, in Bubble sort we
+PUSH MAXIMUM TO THE LAST but with ADJACENT SWAPPING
+
+Given Array - [13, 46, 24, 52, 20, 9]
+
+Step 1 - Push the Maximum to last by adjacent SWAPPING
+[13, 46, 24, 52, 20, 9] -> [13, 46, 24, 52, 20, 9]
+
+No swap required because adjacent are in sorted order i.e. 13 < 46
+
+Step 2 - Move one index ahead
+[13, 46, 24, 52, 20, 9] -> [13, 24, 46, 52, 20, 9]
+
+Swap required between 24 and 46 since 46 > 24 like adjacent are not in sorted order
+
+Step 3 - Move one index ahead
+[13, 24, 46, 52, 20, 9] -> [13, 24, 46, 52, 20, 9]
+
+No swap required because adjacent are in sorted order i.e. 46 < 52
+
+Step 4 - Move one index ahead
+[13, 24, 46, 52, 20, 9] -> [13, 24, 46, 20, 52, 9]
+
+Swap required between 52 and 20 since 52 > 20 like adjacent are not in sorted order
+
+Step 5 - Move one index ahead
+[13, 24, 46, 20, 52, 9] -> [13, 24, 46, 20, 9, 52]
+
+Swap required between 52 and 9 since 52 > 9 like adjacent are not in sorted order
+
+SO NOW AFTER ONE ITERATION WE CAN SEE THE MAXIMUM ELEMENT IS AT THE LAST OF ARRAY
+
+Now for another iteartion we repeat this from 0 till n - 1 since last is sorted
+
+
+OBSERVATION:
+We performed adjacent swapping from 0 to n-1
+We performed adjacent swapping from 0 to n-2
+...
+...
+we will perofm adjacent swapping from o to n -1
+
+which gives us i = n - 1 and i >= 1 and i--
