@@ -1,0 +1,17 @@
+Quick sort sorts any given data structure into Ascending order but can also be used
+to sort in the descending order with minor tweaks.
+
+Quick Sort has Time Complexity of O(n logn) and Space Complexity of O(1).
+It is same as Merge Sort's but doesn't use the extra temporary array to sort
+
+Example Array = [ 4, 6, 2, 5, 7, 9, 1, 3]
+
+Now to solve using Quick Sort, we'll first pick the pivot element
+(How to pick pivot element, apply these four steps, it could be any from given ones)
+
+1. First element in the array
+2. Last element in the array
+3. Median element in the array
+4. Random element in the array
+
+Picking the Pivot is just the first part, we need to place it in its correct position
