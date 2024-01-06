@@ -43,3 +43,4 @@ for(i = 0; i < n - 2; i++) {
     swap(array[min], array[i])
 }
 
+Need to revise this once
