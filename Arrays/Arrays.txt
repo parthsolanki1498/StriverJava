@@ -1,0 +1,1 @@
+Definition - Array is a data structure which contains 
