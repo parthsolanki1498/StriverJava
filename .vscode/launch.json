@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LargestInArray",
+            "request": "launch",
+            "mainClass": "Arrays.LargestInArray",
+            "projectName": "Java_162458c8"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
