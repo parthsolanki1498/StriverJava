@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CheckArraySorted",
+            "request": "launch",
+            "mainClass": "Arrays.CheckArraySorted",
+            "projectName": "Java_162458c8"
+        },
+        {
+            "type": "java",
             "name": "LargestInArray",
             "request": "launch",
             "mainClass": "Arrays.LargestInArray",
